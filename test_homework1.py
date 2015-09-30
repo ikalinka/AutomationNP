@@ -11,7 +11,7 @@ def test_get_candidate():
     r = requests.get(qa_url+'candidates')
     assert r.status_code == 200, 'Status is not 200'
 
-def test_post_candidate():
+def test_post_candidate(): # comment
     r = requests.post(qa_url+'candidates', data=json.dumps(data), headers = header)
     assert r.status_code == 201, 'Status is not 201'
 
